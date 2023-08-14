@@ -1,0 +1,93 @@
+.Navbar{
+    display: flex;
+    align-items: center;
+
+    height: 8vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.Navbar .links{
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+    gap: 2rem;
+    width: 50%;
+}
+.Navbar .links ul{
+    display: flex;
+    gap: 12%;
+}
+.Navbar .links li{
+    list-style: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.Navbar .profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    gap: 2rem;
+    margin-right: 2rem;
+
+}
+.profile input{
+    border: 1px solid rgb(240, 240, 240);
+    padding-left: 5px;
+    height: 2.5rem;
+    width: 70%;
+    border-radius: 5px;
+    outline: none;
+}
+.profile p{
+    font-weight: 500;
+    cursor: pointer;
+}
+.profile p svg{
+    font-size: 1.2rem;
+
+}
+.menu{
+    display: none;
+}
+.menu .icon{
+    font-size: 1.7rem;
+}
+
+@media (max-width: 1070px) {
+ 
+    .menu {
+        display: block;
+    }
+
+    .Navbar .links ul{
+        display: none;
+    }
+    .Navbar .links {
+        width: 10%;
+  
+    }
+    .Navbar .profile{
+        width: 80%;
+        margin-right: 0rem;
+      
+    }
+   
+}
+@media (max-width:600px) {
+
+    .profile .hideble{
+        display: none;
+    }
+    .Navbar .profile{
+  
+        padding-left: 1rem;
+        gap: 1.2rem;
+        margin-right: 1rem;
+    
+    }
+    .profile p{
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+}

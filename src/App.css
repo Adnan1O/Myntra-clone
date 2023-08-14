@@ -1,7 +1,33 @@
 .App {
   text-align: center;
+
+}
+*{
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
 }
 
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+figure,
+figcaption,
+blockquote,
+button,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

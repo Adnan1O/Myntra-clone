@@ -1,0 +1,57 @@
+.ResNavbar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: white;
+    width: 200px;
+    height: 100vh;
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+
+}
+/* .ResNavbar img{
+    position: absolute;
+    
+} */
+.container-res{
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column; /* Stack the items vertically */
+    justify-content: center; /* Center the items vertically */
+    align-items: flex-start
+}
+.container-res svg{
+    margin-top: 1rem;
+    padding-left: 2rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+   
+}
+.next{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    padding-left: 2rem;
+    margin-top: 2rem;
+}
+.next li{
+    list-style: none;  
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+.next li:hover{
+    color: #F13AB1;
+}
+.hideit{
+    display: none;
+ }
+@media (max-width:600px) {
+
+ .hideit{
+    display: block;
+ }
+}
