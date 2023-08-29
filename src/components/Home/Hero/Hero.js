@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Hero.css"
-import hero from "../Img/hero.png"
+import hero from "../../Img/hero.png"
 function Hero() {
   return (
     <div className='hero'>
@@ -12,4 +12,4 @@ function Hero() {
   )
 }
 
-export default Hero
+export default Hero;
