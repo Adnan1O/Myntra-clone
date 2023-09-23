@@ -7,8 +7,8 @@ app.use(cors)
 app.use(express.json())
 
 mongoose.connect(
-    "mongodb+srv://adnn4u:adnan1882@cluster0.axlobi4.mongodb.net/myntra?retryWrites=true&w=majority"
-)
+    "mongodb+srv://addy2023:Adnanshaikh3600@mynta.nq2n2md.mongodb.net/mynta?retryWrites=true&w=majority"
+    )
 
 app.post("/addproduct", async(req,res)=>{
     try {
