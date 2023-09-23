@@ -6,7 +6,7 @@ import { AiOutlineHeart } from 'react-icons/ai';
 import { BsBag } from 'react-icons/bs';
 import { HiMenuAlt1 } from 'react-icons/hi';
 import ResNavbar from './ResNavbar';
-
+import { Link } from 'react-router-dom';
 function Navbar() {
   const [responsive, setResponsive] = useState(false);
   const Open=()=>{
@@ -28,7 +28,7 @@ function Navbar() {
     </div> 
     <div className="profile">
     <input type="text" placeholder='Search for Products and Brands' />
-    <p className='hideble'><FiUser/> Profile</p>
+   <Link to="/login"> <p className='hideble'><FiUser/> Profile</p></Link>
     <p  className='hideble'><AiOutlineHeart/> Wishlist</p>
     <p ><BsBag/> Bag</p>
    <span className='menu' onClick={Open}> <HiMenuAlt1 className='icon'/></span>

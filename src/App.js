@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Home from './components/Home/Home';
 import { Routes, Route } from 'react-router-dom';
 import Admin from './components/Admin/Admin';
+import Login from './components/Login/Login';
 function App() {
   // const [men, setMen] = useState(false);
   // const [women, setWomen] = useState(false)
@@ -13,6 +14,7 @@ function App() {
     <Navbar/>
     <Routes>
     <Route path="/" element={<Home/>} />  
+    <Route path="/login" element={<Login/>} />  
     <Route path='/admin' element={<Admin/>}/>
     </Routes>
 

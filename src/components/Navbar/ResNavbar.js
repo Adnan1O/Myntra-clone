@@ -1,7 +1,7 @@
 import React from 'react'
 import "./ResNavbar.css"
 import { RxCross2 } from 'react-icons/rx';
-
+import { Link } from 'react-router-dom';
 function ResNavbar({close}) {
 
  const closer=()=>{
@@ -13,7 +13,7 @@ function ResNavbar({close}) {
       <div className="container-res">
       <RxCross2/>
   <div className="next">
-        <li className='hideit'>PROFILE</li>
+  <Link to="/login"><li className='hideit'>PROFILE</li></Link>
         <li className='hideit'>WISHLIST</li>
         <li>MEN</li>
         <li>WOMEN</li>
