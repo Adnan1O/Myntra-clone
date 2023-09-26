@@ -37,6 +37,26 @@ app.post("/register", async(req,res)=>{
     }
 })
 
+app.post("/login", async(req,res)=>{
+    try {
+        const {username,password} = req.body;
+        const user = await userModel.findOne({username})
+        if(!user){
+            return res.status(404).json({message:"username does not exist"})
+        }
+        const passCompare = await bcrypt.compare(password, user.password)
+        if(!passCompare){
+            return res.status(401).json({message:"password is incorrect"})
+        }
+        const token = jwt.sign({id:user._id}, "myntradnan")
+        res.status(200).json({message:"login succesful", token,  username:user.username})
+    } catch (error) {
+        console.error(error.message);
+    }
+})
+
+
+
 app.post("/addproduct", async(req,res)=>{
     try {
         const {brand,title,description ,price,discountedPrice,image,

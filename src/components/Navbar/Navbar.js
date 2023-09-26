@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Navbar.css"
 import myntra from "../Img/myntra.png"
 import { FiUser } from 'react-icons/fi';
@@ -7,11 +7,16 @@ import { BsBag } from 'react-icons/bs';
 import { HiMenuAlt1 } from 'react-icons/hi';
 import ResNavbar from './ResNavbar';
 import { Link } from 'react-router-dom';
+import {useStateValue} from "../StateProvider/StateProvider"
 function Navbar() {
   const [responsive, setResponsive] = useState(false);
+  const [{user, isLoggedIn}] = useStateValue()
   const Open=()=>{
     setResponsive(!responsive);
   }
+  useEffect(()=>{
+    console.log(user, isLoggedIn)
+  },[])
   return (
   <div className='Navbar'>
   <div className="links">
@@ -28,9 +33,15 @@ function Navbar() {
     </div> 
     <div className="profile">
     <input type="text" placeholder='Search for Products and Brands' />
-   <Link to="/login"> <p className='hideble'><FiUser/> Profile</p></Link>
+    {
+    isLoggedIn ?(
+      <Link to="/login"> <p className='hideble'><FiUser/> Profile</p></Link>
+    ):(
+      <p className='hideble'><FiUser/> Profile</p>
+    )}
+   
     <p  className='hideble'><AiOutlineHeart/> Wishlist</p>
-    <p ><BsBag/> Bag</p>
+    <p><BsBag/> Bag</p>
    <span className='menu' onClick={Open}> <HiMenuAlt1 className='icon'/></span>
     </div>
     {
