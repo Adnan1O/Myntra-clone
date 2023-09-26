@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, {useState } from 'react'
 import "./Navbar.css"
 import myntra from "../Img/myntra.png"
 import { FiUser } from 'react-icons/fi';
@@ -8,9 +8,14 @@ import { HiMenuAlt1 } from 'react-icons/hi';
 import ResNavbar from './ResNavbar';
 import { Link } from 'react-router-dom';
 import {useStateValue} from "../StateProvider/StateProvider"
+import Profile from './Profile';
 function Navbar() {
   const [responsive, setResponsive] = useState(false);
   const [{user, isLoggedIn}] = useStateValue()
+  const [profile, setProfile]= useState(false)
+  const open=()=>{
+    setProfile(!profile)
+  }
   const Open=()=>{
     setResponsive(!responsive);
   }
@@ -34,10 +39,12 @@ function Navbar() {
     {
     isLoggedIn ?(
       <div className="profile-area">
-      <p className='hideble'><FiUser/> Profile</p> 
-      <div className="dropdown">
-<span>Hello {user}</span>
-      </div>
+      <p className='hideble' onClick={open} ><FiUser/> Profile</p>
+{
+  profile&&(   
+      <Profile/>
+  )
+}
       </div>
     ):(
       <Link to="/login"> <p className='hideble'><FiUser/> Profile</p></Link>

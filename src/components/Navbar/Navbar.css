@@ -62,10 +62,49 @@
     background-color: white;
     position: absolute;
     top: 4.7rem;
-    right: 12rem;
+    right: 2%;
     width: 270px;
-    height: 300px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.123);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.8rem;
+    color: rgb(94, 94, 94);
+    padding-left: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.dropdown .first-d{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid rgb(218, 218, 218);
+padding-bottom: 0.4rem;
+width: 100%;
+padding-top: 1.5rem;
+gap: 0.5rem;
+}
+.dropdown .first-d p{
+    font-weight: 700;
+    color: rgb(53, 53, 53);
+}
+.dropdown .second-d{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    align-items: flex-start;
+gap: 0.5rem;
+border-bottom: 1px solid rgb(218, 218, 218);
+padding-bottom: 0.4rem;
+width: 100%;
+
+}
+.dropdown .second-d li{
+    transition: 0.2s ease-in;
+}
+.dropdown .second-d li:hover{
+    font-weight: 600;
+    color: rgb(53, 53, 53);
+    cursor: pointer;
 }
 
 @media (max-width: 1070px) {
