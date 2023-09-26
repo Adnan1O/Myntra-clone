@@ -14,9 +14,7 @@ function Navbar() {
   const Open=()=>{
     setResponsive(!responsive);
   }
-  useEffect(()=>{
-    console.log(user, isLoggedIn)
-  },[])
+
   return (
   <div className='Navbar'>
   <div className="links">
@@ -35,9 +33,14 @@ function Navbar() {
     <input type="text" placeholder='Search for Products and Brands' />
     {
     isLoggedIn ?(
-      <Link to="/login"> <p className='hideble'><FiUser/> Profile</p></Link>
+      <div className="profile-area">
+      <p className='hideble'><FiUser/> Profile</p> 
+      <div className="dropdown">
+<span>Hello {user}</span>
+      </div>
+      </div>
     ):(
-      <p className='hideble'><FiUser/> Profile</p>
+      <Link to="/login"> <p className='hideble'><FiUser/> Profile</p></Link>
     )}
    
     <p  className='hideble'><AiOutlineHeart/> Wishlist</p>

@@ -1,6 +1,6 @@
 export const initialState = {
     user: localStorage.getItem("username") || null,
-    isLoggedIn: !!localStorage.getItem("token") && localStorage.getItem("token") !== "null",
+    isLoggedIn: !!localStorage.getItem("token")
   };
   
 
