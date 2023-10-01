@@ -4,15 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import { StateProvider } from './components/StateProvider/StateProvider';
-import reducer, { initialState } from "./components/StateProvider/Reducer";
+import { UserAuthContextProvider } from './components/StateProvider/UserAuthContext';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter> 
-    <StateProvider initialState={initialState} reducer={reducer} >
+    <UserAuthContextProvider>
      <App />
-     </StateProvider>
+   </UserAuthContextProvider>
     </BrowserRouter>
   
   </React.StrictMode>

@@ -1,21 +1,19 @@
 import React from 'react'
-import {useStateValue} from "../StateProvider/StateProvider"
+
   import "./Navbar.css"
 
 
 function Profile() {
-    const [{user, isLoggedIn}] = useStateValue()
+   
 
     const Logout =()=>{
-        localStorage.setItem("username", null)
-        localStorage.setItem("token", null)
-        window.location.reload("/")
+ console.log("object")
     }
 
   return (
     <div className="dropdown">
     <div className="first-d">
-<p>Hello {user}</p>
+<p>Hello</p>
   <span>9867794297</span>
   </div>
   <div className="second-d">

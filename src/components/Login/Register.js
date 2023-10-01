@@ -1,33 +1,39 @@
 import React, { useState } from 'react'
 import "./Login.css"
+import { Link } from 'react-router-dom'
+import { useUserAuth } from '../StateProvider/UserAuthContext'
 function Register() {
-  const [username, setUsername] =useState("")
+  const [email, setEmail] =useState("")
   const [password, setPassword] = useState("")
+  const [error, setError] = useState("");
+  const [success, setSuccess]= useState('')
+  const [openModel, setOpenModel]= useState(false)
+  const {signUp} = useUserAuth()
 
-  const SendDetails=async()=>{
-    try {
-      const body = {username, password};
-      console.log(body)
-      const response = await fetch("http://localhost:5000/register",{
-        method:"POST",
-        headers:{
-          "Content-Type": "application/json"
-        },
-        body:JSON.stringify(body)
-      })
-      const jsonData = await response.json();
-      console.log(jsonData)
-    } catch (error) {
-      console.error(error.message);
-    }
+  const SendDetails=async(e)=>{
+    e.preventDefault(e)
+    setError("");
+    try { 
+      await signUp(email, password)
+      setSuccess("egistration successful. Confirmation email will be sent.")
+      setOpenModel(!openModel)      
+      setEmail("")
+      setPassword("")  
+      } catch (error) {
+        setError(error.message);
+      }
   }
+  // adnn4u@gmail.com adnanshaikh36600
   return (
 <div className='Login'>
 <div className="login-area">
-<h3>Create your account</h3>
+{openModel? 
+<h3> User account created <Link to='/login' style={{color:'#E72744'}} > Login </Link></h3>: 
+ <h3>Create your account</h3>
+ }
 <div className="input-area">
     
-    <input type="text" onChange={(e)=>setUsername(e.target.value)} placeholder='Email or Mobile Number*' />
+    <input type="text" onChange={(e)=>setEmail(e.target.value)} placeholder='Email or Mobile Number*' />
     <input type="text" onChange={(e)=>setPassword(e.target.value)} placeholder='Password*' />
     <button onClick={SendDetails}>SIGNUP</button>
 </div>
