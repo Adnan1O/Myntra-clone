@@ -1,19 +1,22 @@
 import React from 'react'
-
   import "./Navbar.css"
+import { useUserAuth } from '../StateProvider/UserAuthContext'
 
-
-function Profile() {
-   
-
-    const Logout =()=>{
- console.log("object")
+function Profile({close}) {
+const {user, logOut} = useUserAuth()
+    const Logout =async()=>{
+      try {
+        await logOut();
+        close()
+       } catch (error) {
+         console.error(error.message);
+       }
     }
 
   return (
     <div className="dropdown">
     <div className="first-d">
-<p>Hello</p>
+<p>Hello {user? user.email:""}</p>
   <span>9867794297</span>
   </div>
   <div className="second-d">

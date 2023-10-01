@@ -9,10 +9,12 @@ import ResNavbar from './ResNavbar';
 import { Link } from 'react-router-dom';
 
 import Profile from './Profile';
+import { useUserAuth } from '../StateProvider/UserAuthContext';
 function Navbar() {
   const [responsive, setResponsive] = useState(false);
-
   const [profile, setProfile]= useState(false)
+const {user} = useUserAuth()
+
   const open=()=>{
     setProfile(!profile)
   }
@@ -36,12 +38,18 @@ function Navbar() {
     </div> 
     <div className="profile">
     <input type="text" placeholder='Search for Products and Brands' />
+{
+  user?<p className='hideble' onClick={open}><FiUser/>Profile</p>: 
+  <Link to="/login"> <p className='hideble'><FiUser/> Profile</p></Link>
 
-      <Link to="/login"> <p className='hideble'><FiUser/> Profile</p></Link>
- 
+}
+      
+ { profile&&(
+  <Profile close={open} />
+  ) }
    
     <p  className='hideble'><AiOutlineHeart/> Wishlist</p>
-    <p><BsBag/> Bag</p>
+    <p><BsBag/>Bag</p>
    <span className='menu' onClick={Open}> <HiMenuAlt1 className='icon'/></span>
     </div>
     {
