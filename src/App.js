@@ -7,14 +7,15 @@ import { Routes, Route } from 'react-router-dom';
 import Admin from './components/Admin/Admin';
 import Login from './components/Login/Login';
 import Register from './components/Login/Register';
+import { useUserAuth } from './components/StateProvider/UserAuthContext';
 
 function App() {
   // const [men, setMen] = useState(false);
   // const [women, setWomen] = useState(false)
   // const [display, setDisplay]=useState(false)
-
+const {user} = useUserAuth()
   useEffect(()=>{
-    console.log("user")
+    console.log(user)
   },[])
   return (
     <div className="App">

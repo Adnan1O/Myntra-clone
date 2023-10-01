@@ -45,6 +45,15 @@
     display: flex;
     gap: 0.2rem;
 }
+.Login .icons-area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.Login .icons-area img{
+    cursor: pointer;
+}
 .register-area{
     display: flex;
     flex-direction: column;
