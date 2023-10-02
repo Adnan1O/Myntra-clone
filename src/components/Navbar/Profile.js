@@ -17,7 +17,7 @@ const {user, logOut} = useUserAuth()
     <div className="dropdown">
     <div className="first-d">
 <p>Hello {user? user.email:""}</p>
-  <span>9867794297</span>
+  <span>{user.phoneNumber}</span>
   </div>
   <div className="second-d">
     <li>Orders</li>

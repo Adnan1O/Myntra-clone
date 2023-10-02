@@ -1,0 +1,17 @@
+.input-error input{
+    width: 20rem;
+    height: 2.5rem;
+    border: 1px solid rgb(199, 199, 199);
+    padding-left: 0.5rem;
+    font-size: 0.7rem;
+    
+}
+.button-area button{
+    width: 20rem;
+    height: 2.5rem;
+    background-color:#FF3E6C ;
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
