@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-
+  letter-spacing: 0.5px;
 }
 *{
 font-family: 'Poppins', sans-serif;
@@ -38,6 +38,10 @@ color: inherit;
 }
 li{
   list-style: none;
+}
+p{
+  font-size: 0.8rem;
+    color: rgb(94, 94, 94);
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

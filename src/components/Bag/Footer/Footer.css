@@ -1,0 +1,10 @@
+.Foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+.Foot p{
+    cursor: pointer;
+    font-weight: bold;
+}

@@ -40,7 +40,7 @@ const {user} = useUserAuth()
     <input type="text" placeholder='Search for Products and Brands' />
 {
   user?<p className='hideble' onClick={open}><FiUser/>Profile</p>: 
-  <Link to="/login"> <p className='hideble'><FiUser/> Profile</p></Link>
+  <Link to="/mobile"> <p className='hideble'><FiUser/> Profile</p></Link>
 
 }
       
@@ -48,8 +48,8 @@ const {user} = useUserAuth()
   <Profile close={open} />
   ) }
    
-    <p  className='hideble'><AiOutlineHeart/> Wishlist</p>
-    <p><BsBag/>Bag</p>
+   <Link to='/Wishlist'> <p  className='hideble'><AiOutlineHeart/> Wishlist</p></Link>
+   <Link to="/bag"> <p><BsBag/>Bag</p></Link>
    <span className='menu' onClick={Open}> <HiMenuAlt1 className='icon'/></span>
     </div>
     {

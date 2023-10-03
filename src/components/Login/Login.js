@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import g from "./img/g.png"
 import f from "./img/f.png"
+import phone from "./img/phone.png"
+
 import "./Login.css"
 import { Link, useNavigate } from 'react-router-dom'
 import { useUserAuth } from '../StateProvider/UserAuthContext'
@@ -49,6 +51,7 @@ const navigate = useNavigate()
 <div className="icons-area">
   <img onClick={handleGoogleLogin} src={g} alt="" />
   <img src={f} alt="" />
+ <Link to='/mobile'> <img src={phone} alt=""/></Link>
         </div>
 
 </div>

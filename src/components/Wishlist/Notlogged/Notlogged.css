@@ -1,0 +1,31 @@
+.Notlogged{
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.please-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.please-area button{
+    text-transform: uppercase;
+    width: 10rem;
+    height: 3rem;
+    border: 1px solid #7271F1;
+    background-color: transparent;
+    color: #7271F1;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+.please-area p{
+    font-size: 1rem;
+}
+.please-area h3{
+    font-size: 1.5rem;
+}

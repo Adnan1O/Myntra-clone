@@ -9,6 +9,8 @@ import Login from './components/Login/Login';
 import Register from './components/Login/Register';
 import { useUserAuth } from './components/StateProvider/UserAuthContext';
 import Otp from './components/Login/Otp';
+import Bag from './components/Bag/Bag';
+import Wishlist from './components/Wishlist/Wishlist';
 
 function App() {
   // const [men, setMen] = useState(false);
@@ -20,16 +22,17 @@ const {user} = useUserAuth()
   },[])
   return (
     <div className="App">
-    <Navbar/>
+    
     <Routes>
+    <Route path="/navbar" element={<Navbar/>} />   
     <Route path="/" element={<Home/>} />  
     <Route path="/login" element={<Login/>} /> 
     <Route path='/mobile' element={<Otp/>} />
     <Route path="/register" element={<Register/>} />  
     <Route path='/admin' element={<Admin/>}/>
+    <Route path='/bag' element={<Bag/>}/>
+    <Route path='/Wishlist' element={<Wishlist/>}/>
     </Routes>
-
-    <Footer/>
     </div>
   );
 }
