@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from '../Card/Card'
 import { useEffect } from 'react';
-
+import "./Shirt.css"
 
 function Shirt() {
     const getProducts=async()=>{

@@ -1,0 +1,40 @@
+.Card{
+   
+    width: 200px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    text-align: start;
+}
+.Card:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.103);
+}
+.Card img{
+    height: 270px;
+    width: 200px;
+    object-fit: cover;
+}
+.Card  .tit-des{
+  
+    width: 100%;
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+
+}
+.Card  .price-div{
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+}
+.Card  .price-div span{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.Card  .price-div p{
+    font-size: 0.8rem;
+    text-decoration: line-through;
+}

@@ -75,7 +75,7 @@ console.error(error.message);
 
 app.get("/product", async(req,res)=>{
     try {
-        const product = ProductModel.find();
+        const product = await ProductModel.find();
         res.json(product)
     } catch (error) {
         console.error(error.message);
