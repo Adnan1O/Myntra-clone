@@ -13,4 +13,4 @@ const ProductSchema = new mongoose.Schema({
     color:{type: String, required: true },
 })
 const ProductModel = mongoose.model("product", ProductSchema)
-module.exports =ProductModel;
+module.exports = ProductModel;

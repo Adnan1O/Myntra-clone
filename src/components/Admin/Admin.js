@@ -8,6 +8,7 @@ function Admin() {
   const [discountedPrice, setDiscountedPrice] = useState("")
   const [image, setImage] = useState("")
   const [imageTwo, setImageTwo] = useState("")
+
   const [gender, setGender] = useState("")
   const [category, setCategory] = useState("")
   const [color, setColor] = useState("")

@@ -5,6 +5,7 @@ const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
 const cors = require("cors")
 const userModel = require("./Models/Users")
+const ProductModel = require("./Models/Products")
 const port = 5000
 app.use(cors())
 app.use(express.json())
@@ -58,18 +59,18 @@ app.post("/login", async(req,res)=>{
 
 
 app.post("/addproduct", async(req,res)=>{
-    try {
-        const {brand,title,description ,price,discountedPrice,image,
-            imageTwo, gender,category,color} = req.body;
-            const add = new Product({
-                brand,title,description ,price,discountedPrice,image,
-                imageTwo, gender,category,color 
-            })
-            await add.save();
-            res.status(201).json({ message: 'Product added successfully' });
-    } catch (error) {
-        console.error(error.message);
-    }
+try {
+const {brand,title,description ,price,discountedPrice,image,
+    imageTwo, gender,category,color} = req.body;
+    const add = new ProductModel({
+        brand,title,description ,price,discountedPrice,image,
+        imageTwo, for: gender,category,color 
+    })
+    await add.save();
+    res.status(201).json({ message: 'Product added successfully' });
+} catch (error) {
+console.error(error.message);
+}
 })
 
 
