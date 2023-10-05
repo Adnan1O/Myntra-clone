@@ -11,15 +11,14 @@ import { useUserAuth } from './components/StateProvider/UserAuthContext';
 import Otp from './components/Login/Otp';
 import Bag from './components/Bag/Bag';
 import Wishlist from './components/Wishlist/Wishlist';
+import Shirt from './components/Clothing/Shirt';
 
 function App() {
   // const [men, setMen] = useState(false);
   // const [women, setWomen] = useState(false)
   // const [display, setDisplay]=useState(false)
-const {user} = useUserAuth()
-  useEffect(()=>{
-    console.log(user)
-  },[])
+//const {user} = useUserAuth()
+
   return (
     <div className="App">
     
@@ -32,6 +31,7 @@ const {user} = useUserAuth()
     <Route path='/admin' element={<Admin/>}/>
     <Route path='/bag' element={<Bag/>}/>
     <Route path='/Wishlist' element={<Wishlist/>}/>
+    <Route path='/shirt' element={<Shirt/>}/>
     </Routes>
     </div>
   );

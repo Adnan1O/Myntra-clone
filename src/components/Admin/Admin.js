@@ -32,17 +32,50 @@ function Admin() {
 
   return (
     <div className='Admin'>
-
-      <input type="text" onChange={(e)=>setBrand(e.target.value)} />
-      <input type="text" onChange={(e)=>setTitle(e.target.value)}  />
-      <input type="text" onChange={(e)=>setDescription(e.target.value)} />
-      <input type="text" onChange={(e)=>setPrice(e.target.value)} />
-      <input type="text" onChange={(e)=>setDiscountedPrice(e.target.value)} />
-      <input type="text" onChange={(e)=>setImage(e.target.value)} />
-      <input type="text" onChange={(e)=>setImageTwo(e.target.value)} />
-      <input type="text" onChange={(e)=>setGender(e.target.value)} />
-      <input type="text" onChange={(e)=>setCategory(e.target.value)} />
-      <input type="text" onChange={(e)=>setColor(e.target.value)} />
+<h2>Enter product details</h2>
+<div className="break">
+      <input placeholder='Enter brandname of the product'  type="text" onChange={(e)=>setBrand(e.target.value)} />
+      <input placeholder='Enter title of the product' type="text" onChange={(e)=>setTitle(e.target.value)}  />
+      <input placeholder='Enter Description for the product' type="text" onChange={(e)=>setDescription(e.target.value)} />
+      <input placeholder='Enter price of the product ' type="text" onChange={(e)=>setPrice(e.target.value)} />
+      <input placeholder='Enter discounted price of the product ' type="text" onChange={(e)=>setDiscountedPrice(e.target.value)} />   
+      <input placeholder='Enter the image link' type="text" onChange={(e)=>setImage(e.target.value)} />
+      <input placeholder='Enter the second image link' type="text" onChange={(e)=>setImageTwo(e.target.value)} />    
+      <input placeholder='Enter color' type="text" onChange={(e)=>setColor(e.target.value)} />
+     <div className="select-area">
+      <label>category:</label>
+      <select onChange={(e) => setCategory(e.target.value)}>
+        <option value="">Select a category</option>
+        <option value="tshirt">T-Shirt</option>
+        <option value="shirt">Shirt</option>
+        <option value="jeans">Jeans</option>
+        <option value="top">Top</option>
+        <option value="skirt">Skirt</option>
+        {/* Add more options as needed */}
+      </select>
+</div>
+      <div className='radio'>
+        
+      <label>
+        <input
+          type="radio"
+          value="men"
+          checked={gender === 'men'}
+          onChange={(e)=>setGender(e.target.value)}
+        />
+        Men
+      </label>
+      <label>
+        <input
+          type="radio"
+          value="women"
+          checked={gender === 'women'}
+          onChange={(e)=>setGender(e.target.value)}
+        />
+        Women
+      </label>
+    </div>
+      </div>
       <button onClick={addProduct}>submit</button>
     </div>
   )

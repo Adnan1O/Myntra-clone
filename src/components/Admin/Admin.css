@@ -1,10 +1,19 @@
-.Admin{
+.Admin {
+    height: 90vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    gap: 2rem;
+}
+.Admin .break{
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    height: 90vh;
+    width: 70%;
+    flex-wrap: wrap;
+ 
 }
 .Admin input{
     width: 20rem;
@@ -21,4 +30,22 @@
     color: white;
     font-weight: 500;
     cursor: pointer;
+}
+.Admin .radio{
+    display: flex;
+  
+}
+.Admin .radio input{
+    width: 5.5rem;
+    height: 1rem;
+   
+}
+@media (max-width:1000px) {
+  
+    .Admin .break{
+     
+        width: 100%;
+       
+     
+    }
 }

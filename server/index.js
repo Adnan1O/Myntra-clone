@@ -73,6 +73,16 @@ console.error(error.message);
 }
 })
 
+app.get("/product", async(req,res)=>{
+    try {
+        const product = ProductModel.find();
+        res.json(product)
+    } catch (error) {
+        console.error(error.message);
+        res.status(500).json({ error: "Server Error" });
+    }
+})
+
 
 
 
