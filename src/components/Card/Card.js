@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Card.css"
+import { AiOutlineHeart } from 'react-icons/ai';
 function Card() {
   return (
     <div className='Card'>
@@ -12,6 +13,11 @@ function Card() {
    <span>RS. 999</span>
     <p>RS. 1500</p>
     </div>
+ 
+    </div>  
+     <div className="wishlist-area">
+      <button> <AiOutlineHeart/>WISHLIST</button>
+      <p>Sizes: M</p>
     </div>
     </div>
   )

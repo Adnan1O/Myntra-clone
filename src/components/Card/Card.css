@@ -1,5 +1,5 @@
 .Card{
-   
+   position: relative;
     width: 200px;
     height: 350px;
     display: flex;
@@ -7,6 +7,8 @@
     align-items: flex-start;
     gap: 0.8rem;
     text-align: start;
+    align-items: center;
+    cursor: pointer;
 }
 .Card:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.103);
@@ -18,9 +20,10 @@
 }
 .Card  .tit-des{
   
-    width: 100%;
-    padding-left: 0.5rem;
+    width: 90%;
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
     flex-direction: column;
     gap: 0.3rem;
 
@@ -37,4 +40,36 @@
 .Card  .price-div p{
     font-size: 0.8rem;
     text-decoration: line-through;
+}
+.Card .wishlist-area{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+ 
+background-color: white;
+padding-left: 0.5rem;
+position: absolute;
+bottom: 1.5rem;
+display: none;
+
+}
+.Card:hover .wishlist-area{
+    display: block;
+}
+.Card .wishlist-area button{
+    width: 95%;
+    height: 2rem;
+    background-color: transparent;
+    border: 1px solid grey;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+.Card .wishlist-area button svg{
+    font-size: 1.1rem;
+    color: grey;
 }
