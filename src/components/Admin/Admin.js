@@ -51,6 +51,8 @@ function Admin() {
         <option value="jeans">Jeans</option>
         <option value="top">Top</option>
         <option value="skirt">Skirt</option>
+        <option value="shoes">Shoes</option>
+        <option value="dress">Dress</option>
         {/* Add more options as needed */}
       </select>
 </div>

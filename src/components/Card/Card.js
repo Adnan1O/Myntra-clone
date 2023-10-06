@@ -1,17 +1,17 @@
 import React from 'react'
 import "./Card.css"
 import { AiOutlineHeart } from 'react-icons/ai';
-function Card() {
+function Card({product}) {
   return (
     <div className='Card'>
-      <img src="https://www.mydesignation.com/wp-content/uploads/2020/02/golden-yellow-plain-tshirt-mydesignation.jpg" alt="" />
+      <img src={product.image} alt="" />
   <div className="tit-des">
-   <h4>Nike</h4>
-   <p>title of the image</p>
+   <h4>{product.brand}</h4>
+   <p>{product.title}</p>
    
    <div className="price-div">
-   <span>RS. 999</span>
-    <p>RS. 1500</p>
+   <span>RS. {product.price}</span>
+    <p>RS. {product.discountedPrice}</p>
     </div>
  
     </div>  
