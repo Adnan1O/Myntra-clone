@@ -4,7 +4,7 @@ import { AiOutlineHeart } from 'react-icons/ai';
 function Card({product}) {
   return (
     <div className='Card'>
-      <img src={product.image} alt="" />
+      <img src={product} alt="" />
   <div className="tit-des">
    <h4>{product.brand}</h4>
    <p>{product.title}</p>
