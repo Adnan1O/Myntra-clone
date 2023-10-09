@@ -42,6 +42,11 @@
 }
 @media (max-width:1000px) {
   
+    .Admin {
+        height: auto;
+        margin: 1rem 0;
+        
+    }
     .Admin .break{
      
         width: 100%;

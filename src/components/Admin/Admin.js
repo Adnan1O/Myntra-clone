@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import "./Admin.css"
+import {useUserAuth} from "../StateProvider/UserAuthContext"
+import { useEffect } from 'react'
 function Admin() {
   const [brand, setBrand] = useState("")
   const [title, setTitle] = useState("")
@@ -12,11 +14,15 @@ function Admin() {
   const [gender, setGender] = useState("")
   const [category, setCategory] = useState("")
   const [color, setColor] = useState("")
-
+const {user} = useUserAuth()
+useEffect(()=>{
+  console.log(user.uid)
+})
   const addProduct=async()=>{
     try {
+      const userId = user.uid
       const body = {brand,title,description ,price,discountedPrice,image,
-        imageTwo, gender,category,color}
+        imageTwo, gender,category,color, userId}
       const send = await fetch("http://localhost:5000/addproduct",{
           method:"POST",
           headers:{
