@@ -12,6 +12,7 @@ import Otp from './components/Login/Otp';
 import Bag from './components/Bag/Bag';
 import Wishlist from './components/Wishlist/Wishlist';
 import Shirt from './components/Clothing/Shirt';
+import Singleproduct from './components/Singleproduct/Singleproduct';
 
 function App() {
   // const [men, setMen] = useState(false);
@@ -32,6 +33,7 @@ function App() {
     <Route path='/bag' element={<Bag/>}/>
     <Route path='/Wishlist' element={<Wishlist/>}/>
     <Route path='/shirt' element={<Shirt/>}/>
+    <Route path='/singleproduct/:id' element={<Singleproduct/>}/>
     </Routes>
     </div>
   );

@@ -43,6 +43,22 @@ p{
   font-size: 0.8rem;
     color: rgb(94, 94, 94);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+figure,
+figcaption,
+blockquote,
+button,
+input{
+  color: #3b3d3f;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
