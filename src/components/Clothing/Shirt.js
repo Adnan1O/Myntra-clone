@@ -11,7 +11,7 @@ function Shirt() {
         try {
          const response = await fetch("http://localhost:5000/product");
          const jsonData = await response.json();
-         console.log(jsonData)
+        console.log(jsonData) 
          setProduct(jsonData)
         } catch (error) {
             console.error(error.message);

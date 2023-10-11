@@ -9,8 +9,9 @@ function Singleproduct() {
   const singleData= async()=>{
 
     try {
-      const response = await fetch(`http//localhost:5000/singleproduct/${productId}`)
+      const response = await fetch(`http://localhost:5000/singleproduct/${productId}`)
       const jsonData = await response.json()
+     
       setProductData(jsonData)
     } catch (error) {
       console.error(error.message);
@@ -21,7 +22,7 @@ function Singleproduct() {
   },[productId])
   return (
     <div className='Singleproduct'>
-      hello{console.log(productData)}
+      hello {console.log(productData)}
     </div>
   )
 }

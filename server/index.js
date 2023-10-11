@@ -83,6 +83,20 @@ app.get("/product", async(req,res)=>{
     }
 })
 
+app.get('/singleproduct/:id', async(req,res)=>{
+    const productId = req.params.id;
+  console.log(productId)
+    try {
+        // const getProduct = await ProductModel.findOne({ _id: productId });
+      
+        // res.json(getProduct)
+       
+    } catch (error) {
+        console.error(error.message);
+        res.status(500).json({ error: "Server Error" });
+    }
+})
+
 
 
 
