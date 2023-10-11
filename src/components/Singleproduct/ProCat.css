@@ -1,0 +1,19 @@
+.ProCat{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    height: 4rem;
+}
+.ProCat .cat-area{
+    width: 95%;
+    display: flex;
+    align-items: center;
+   gap: 0.5rem;
+}
+.ProCat .cat-area span{
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.ProCat .cat-area p{
+    font-size: 0.8rem;
+}
