@@ -87,9 +87,8 @@ app.get('/singleproduct/:id', async(req,res)=>{
     const productId = req.params.id;
   console.log(productId)
     try {
-        // const getProduct = await ProductModel.findOne({ _id: productId });
-      
-        // res.json(getProduct)
+    const getProduct = await ProductModel.findOne({ _id: productId });
+     res.json(getProduct)
        
     } catch (error) {
         console.error(error.message);
