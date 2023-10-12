@@ -1,6 +1,8 @@
 import React from 'react'
 import "./ProDetail.css"
 import { AiFillStar } from "react-icons/ai";
+import { AiOutlineHeart } from "react-icons/ai";
+import { BsFillBagFill } from "react-icons/bs";
 function ProDetail() {
   return (
     <div className='ProDetail'>
@@ -33,6 +35,17 @@ function ProDetail() {
           <strong>SELECT SIZE</strong>
           <span>SIZE CHART &gt;</span>
         </div>
+      <div className="size-option">
+         <span>38</span>
+         <span>40</span>
+         <span>42</span>
+         <span>44</span>
+         <span>46</span>
+      </div>
+       <div className="cart-btn-area">
+        <button className='add-to-bag'><BsFillBagFill/>ADD TO BAG</button>
+        <button className='wishlist'><AiOutlineHeart/>WISHLIST</button>
+       </div>
       </div>
     </div>
       </div>
