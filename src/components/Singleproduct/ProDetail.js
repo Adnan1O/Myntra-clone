@@ -3,6 +3,7 @@ import "./ProDetail.css"
 import { AiFillStar } from "react-icons/ai";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsFillBagFill } from "react-icons/bs";
+import { LiaTruckMovingSolid } from "react-icons/lia";
 function ProDetail() {
   return (
     <div className='ProDetail'>
@@ -47,6 +48,22 @@ function ProDetail() {
         <button className='wishlist'><AiOutlineHeart/>WISHLIST</button>
        </div>
       </div>
+    </div>
+    <div className="delivery-options">
+      <strong>DELIVERY OPTIONS <LiaTruckMovingSolid/></strong>
+     <div className="inp-note-area">
+     <div className="inp-area">
+        <input type="text" placeholder='Enter pincode' />
+        <button>Check</button>
+      </div>
+      <p>Please enter PIN code to check delivery time & Pay on Delivery Availability</p>
+     </div>
+<ul>
+  <li>100% Original Products</li>
+  <li>Pay on delivery might be available</li>
+  <li>Easy 14 days returns and exchanges</li>
+  <li>Try & Buy might be available</li>
+</ul>
     </div>
       </div>
       </div>

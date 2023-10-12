@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar';
 import ProCat from './ProCat';
 import ProDetail from './ProDetail';
+import ProData from './ProData';
 
 function Singleproduct() {
 
@@ -28,6 +29,7 @@ function Singleproduct() {
     <div className="page-layout">
     <ProCat/>
     <ProDetail/>
+    <ProData/>
       </div> 
     </div>
   )
