@@ -1,4 +1,99 @@
 .ProDetail{
     display: flex;
+  justify-content: center;
+  height: 60vh;
+}
+.ProDetail .pro-area{
+    width: 95%;
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.pro-area .img-area{
+
+    display: flex;
+    justify-content: start;
+    gap: 2%;
+}
+.pro-area .img-area img{
+    cursor: zoom-in;
+    object-fit: cover;
+}
+.ProDetail .pro-text{
+
+text-align: start;
+}
+.pro-text .t-area{
+    border-bottom: 1px solid rgb(206, 206, 206);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.pro-text .t-area p{
+    font-size: 1.2rem;
+}
+.t-area .rating{
+    border: 1px solid rgb(223, 223, 223);
+    width: 32%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+.t-area .rating strong{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+.t-area .rating strong svg{
+    color: rgb(0, 163, 136);
+}
+.t-area .rating span{
+    color: rgb(87, 87, 87);
+}
+.price-size{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+.price-size .p-area{
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1.2rem;
+    height: 3rem;
+}
+.price-size .p-area p{
+    font-size: 1.2rem;
+    text-decoration: line-through;
+}
+.price-size .p-area span{
+    color: rgb(255, 171, 15);
+    font-weight: bold;
+}
+.price-size .price-area{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     
 }
+.price-size .price-area .tax{
+    color: rgb(0, 163, 136);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+

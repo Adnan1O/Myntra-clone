@@ -23,10 +23,12 @@ function Singleproduct() {
     singleData();  
   },[productId])
   return (
-    <div className='Singleproduct'>
+  <div className='Singleproduct'>
     <Navbar/>
+    <div className="page-layout">
     <ProCat/>
     <ProDetail/>
+      </div> 
     </div>
   )
 }
