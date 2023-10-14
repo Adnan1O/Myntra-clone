@@ -27,7 +27,7 @@
     cursor: pointer;
 }
 
-@media(max-width:1600px){
+/* @media(max-width:1600px){
   
     .hero{      
        height: 50vh;
@@ -56,4 +56,4 @@
     .hero{      
        height: 20vh;
     }
-}
+} */
