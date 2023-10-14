@@ -3,6 +3,13 @@ import "./ProData.css"
 import { ImFileText2 } from "react-icons/im";
 import { AiOutlineStar } from "react-icons/ai";
 import { AiFillStar } from "react-icons/ai";
+import l1 from "./img/l1.png"
+import l2 from "./img/l2.png"
+import l3 from "./img/l3.png"
+import l4 from "./img/l4.png"
+import l5 from "./img/l5.png"
+
+
 
 function ProData() {
   return (
@@ -30,6 +37,13 @@ function ProData() {
     <div className="overall">
         <span>4.3 <AiFillStar/></span>
       <p> 2.8k Verified Buyers</p> 
+    </div>
+    <div className="indi-rating">
+      <span>5 <AiFillStar/><img src={l1} alt="" /></span>
+      <span>4 <AiFillStar/><img src={l2} alt="" /></span>
+      <span>3 <AiFillStar/><img src={l3} alt="" /></span>
+      <span>2 <AiFillStar/><img src={l4} alt="" /></span>
+      <span>1 <AiFillStar/><img src={l5} alt="" /></span>
     </div>
     </div>
 </div>
