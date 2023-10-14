@@ -1,14 +1,14 @@
 .ProDetail{
     display: flex;
   justify-content: center;
-  height: 70vh;
+  height: 70%;
 
 }
 .ProDetail .pro-area{
     width: 95%;
    
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: 1rem;
 }
 .pro-area .img-area{
