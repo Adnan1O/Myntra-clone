@@ -35,8 +35,8 @@ function ProData() {
     <div className="review-area">
     <h4>RATINGS <AiOutlineStar/></h4> 
     <div className="overall">
-        <span>4.3 <AiFillStar/></span>
-      <p> 2.8k Verified Buyers</p> 
+        <span>4.3<AiFillStar/></span>
+      <p>2.8k Verified Buyers</p> 
     </div>
     <div className="indi-rating">
       <span>5 <AiFillStar/><img src={l1} alt="" /></span>
