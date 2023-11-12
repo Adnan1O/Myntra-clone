@@ -5,6 +5,7 @@ import Navbar from '../Navbar/Navbar';
 import ProCat from './ProCat';
 import ProDetail from './ProDetail';
 import ProData from './ProData';
+import Footer from '../Footer/Footer';
 
 function Singleproduct() {
 
@@ -21,6 +22,7 @@ function Singleproduct() {
   }
   useEffect(()=>{
     singleData();  
+    console.log(productData)
   },[productId])
   return (
   <div className='Singleproduct'>
@@ -29,6 +31,7 @@ function Singleproduct() {
     <ProCat/>
     <ProDetail/>
     <ProData/>
+    <Footer/>
       </div> 
     </div>
   )
