@@ -21,8 +21,7 @@ function App() {
 //const {user} = useUserAuth()
 
   return (
-    <div className="App">
-    
+    <div className="App"> 
     <Routes>
     <Route path="/navbar" element={<Navbar/>} />   
     <Route path="/" element={<Home/>} />  
