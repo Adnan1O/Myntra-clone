@@ -38,7 +38,6 @@
     gap: 1rem;
     text-align: start;
 }
-
 .review-area .overall span{
     font-size: 3.5rem;
     font-weight: 300;
@@ -47,8 +46,6 @@
     gap: 0.4rem;
     color: rgb(72, 72, 72);
 }
-
-
 .review-area .overall span svg{
  color: #009966;
  font-size: 2rem;
