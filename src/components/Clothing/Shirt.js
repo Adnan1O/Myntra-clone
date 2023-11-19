@@ -6,8 +6,7 @@ import { Link } from 'react-router-dom';
 function Shirt() {
   const [product, setProduct] = useState([])
 
-
-    const getProducts=async()=>{
+  const getProducts=async()=>{
         try {
          const response = await fetch("http://localhost:5000/product");
          const jsonData = await response.json();
@@ -17,7 +16,6 @@ function Shirt() {
             console.error(error.message);
         }
     }
-
     useEffect(()=>{
         getProducts()
     },[])
