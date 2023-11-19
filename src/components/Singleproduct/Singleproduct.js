@@ -8,7 +8,6 @@ import ProData from './ProData';
 import Footer from '../Footer/Footer';
 
 function Singleproduct() {
-
   const { productId } = useParams();
   const [productData, setProductData] = useState({});
   const singleData= async()=>{
