@@ -39,9 +39,9 @@ function ProData() {
     <div className="indi-rating">
       <span>5<AiFillStar/><img src={l1} alt="" /></span>
       <span>4<AiFillStar/><img src={l2} alt="" /></span>
-      <span>3 <AiFillStar/><img src={l3} alt="" /></span>
-      <span>2 <AiFillStar/><img src={l4} alt="" /></span>
-      <span>1 <AiFillStar/><img src={l5} alt="" /></span>
+      <span>3<AiFillStar/><img src={l3} alt="" /></span>
+      <span>2<AiFillStar/><img src={l4} alt="" /></span>
+      <span>1<AiFillStar/><img src={l5} alt="" /></span>
     </div>
     </div>
 </div>
