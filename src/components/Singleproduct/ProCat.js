@@ -1,5 +1,6 @@
 import React from 'react'
 import "./ProCat.css"
+
 function ProCat() {
   return (
     <div className='ProCat'>
