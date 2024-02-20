@@ -5,7 +5,7 @@ function ProCat() {
   return (
     <div className='ProCat'>
         <div className="cat-area">
-      {/* <p>Home</p><p>/</p> */}
+      <p>Home</p><p>/</p>
       <p>Clothing</p><p>/</p>
       <p>Women Clothing</p><p>/</p>
       <p>Tshirt</p><p>/</p>
