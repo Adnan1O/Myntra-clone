@@ -10,7 +10,7 @@ function ProCat() {
       <p>Women Clothing</p><p>/</p>
       <p>Tshirt</p><p>/</p>
       <span>brand Name</span> 
-      <span>&gt;</span>
+      {/* <span>&gt;</span> */}
       <span>More By brand Name</span>
     </div>
     </div>
