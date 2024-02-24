@@ -14,6 +14,7 @@ function ProData() {
 <div className='ProData'>
     <div className="data-area">
     <div className="data-de">
+      
     <h4>PRODUCT DETAILS <ImFileText2/></h4>
     <p>Purple solid Casual shirt ,has a button-down collar, button
         placket, 1 patch pocket, long regular sleeves,
