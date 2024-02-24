@@ -1,10 +1,10 @@
-/* .ProData{
+.ProData{
     margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;   
     padding-bottom: 1rem;
-} */
+}
 .data-area{
     width: 95%;
     display: flex;
