@@ -6,7 +6,7 @@
     padding-bottom: 1rem;
 }
 .data-area{
-    width: 85%;
+    width: 95%;
     display: flex;
     justify-content: flex-start;  
     align-items: center; 
@@ -15,7 +15,7 @@
 .data-area .data-de {
     width: 100%;
     text-align: start;
-    padding-top: 1rem;
+    padding-top: 1.1rem;
     display: flex;
     flex-direction: column;
     margin-left: 10%;
