@@ -14,10 +14,10 @@ function Admin() {
   const [gender, setGender] = useState("")
   const [category, setCategory] = useState("")
   const [color, setColor] = useState("")
-const {user} = useUserAuth()
-useEffect(()=>{
-  console.log(user.uid)
-})
+  const {user} = useUserAuth()
+    useEffect(()=>{
+      console.log(user.uid)
+    })
   const addProduct=async()=>{
     try {
       const userId = user.uid
