@@ -21,8 +21,7 @@ useEffect(()=>{
   const addProduct=async()=>{
     try {
       const userId = user.uid
-      const body = {brand,title,description ,price,discountedPrice,image,
-        imageTwo, gender,category,color, userId}
+      const body = {brand,title,description ,price,discountedPrice,image,imageTwo, gender,category,color, userId}
       const send = await fetch("http://localhost:5000/addproduct",{
           method:"POST",
           headers:{
