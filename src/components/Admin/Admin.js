@@ -37,7 +37,7 @@ function Admin() {
 
   return (
     <div className='Admin'>
-<h2>Enter product details</h2>
+{/* <h2>Enter product details</h2> */}
 <div className="break">
       <input placeholder='Enter brandname of the product'  type="text" onChange={(e)=>setBrand(e.target.value)} />
       <input placeholder='Enter title of the product' type="text" onChange={(e)=>setTitle(e.target.value)}  />
