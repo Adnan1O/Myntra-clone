@@ -32,7 +32,7 @@ function Singleproduct() {
     <ProCat/>
     <ProDetail/>
     <ProData/>
-    {/* <Footer/> */}
+    <Footer/>
       </div> 
     </div>
   )
